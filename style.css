@@ -55,8 +55,82 @@ img {
   z-index: -1;
 }
 
-.spikes {
-  
+.background__container{
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.spikes__container {
+  width:32rem;
+  position: relative;
+}
+
+.spike{
+  width: 100%;
+}
+
+.spike:nth-child(1){
+  position: absolute;
+  left: 0;
+  top: 10rem;
+}
+.spike:nth-child(2){
+  position: absolute;
+  left: 12rem;
+  top: -5rem;
+}
+.spike:nth-child(3){
+  position: absolute;
+  left: 22rem;
+  top: 15rem;
+}
+.spikes--top-right{
+  top: -158rem;
+  left: 70vw;
+}
+
+.spikes--right{
+  width: 50rem;
+  top: 60rem;
+  left: 162rem;
+}
+
+.spikes--right .spike:nth-child(1){
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.spikes--right .spike:nth-child(2){
+  width: 35rem;
+  position: absolute;
+  top: 5rem;
+}
+.spikes--right .spike:nth-child(3){
+  position: absolute;
+  left: -5rem;
+  top: calc(15rem/1.6);
+}
+
+.spikes--bottom-left{
+  top: 50rem;
+  left: 1.7rem;
+}
+
+.home__square{
+  width: 40rem;
+  position: absolute;
+  top: 8rem;
+  left: 25rem;
+}
+
+.home__dots{
+  width: 40rem;
+  position: absolute;
+  top: 20rem;
+  left: 1rem;
 }
 /* END OF BACKGROUND */
 
@@ -146,11 +220,11 @@ img {
   text-align: center;
 }
 .box-center__logo {
-  width: 100rem;
+  width: 85rem;
 }
 .box-center__logo--line {
   position: absolute;
-  width: 100.5rem;
+  width: 86rem;
 }
 
 .box-center__text {
@@ -182,3 +256,6 @@ img {
 }
 
 /* End of home */
+
+
+/*  */
