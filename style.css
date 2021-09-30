@@ -17,6 +17,7 @@ html {
 
 body {
   font-size: 2.5rem;
+  color: var(--black);
   letter-spacing: 0.2rem;
   text-transform: uppercase;
   background-color: var(--white);
@@ -31,6 +32,21 @@ body {
 
 a {
   color: var(--black);
+}
+
+.number {
+  font-family: 'Alex Brush', 'Helvetica';
+  font-size: 25rem;
+  opacity: 50%;
+  color: var(--grey);
+}
+
+.title {
+  font-size: 10rem;
+}
+
+.title::first-letter {
+  color: var(--blue);
 }
 
 /* End of Reset and Common Styles */
@@ -55,7 +71,7 @@ img {
   z-index: -1;
 }
 
-.background__container{
+.background__container {
   position: relative;
   top: 0;
   right: 0;
@@ -64,69 +80,69 @@ img {
 }
 
 .spikes__container {
-  width:32rem;
+  width: 32rem;
   position: relative;
 }
 
-.spike{
+.spike {
   width: 100%;
 }
 
-.spike:nth-child(1){
+.spike:nth-child(1) {
   position: absolute;
   left: 0;
   top: 10rem;
 }
-.spike:nth-child(2){
+.spike:nth-child(2) {
   position: absolute;
   left: 12rem;
   top: -5rem;
 }
-.spike:nth-child(3){
+.spike:nth-child(3) {
   position: absolute;
   left: 22rem;
   top: 15rem;
 }
-.spikes--top-right{
+.spikes--top-right {
   top: -158rem;
   left: 70vw;
 }
 
-.spikes--right{
+.spikes--right {
   width: 50rem;
   top: 60rem;
   left: 162rem;
 }
 
-.spikes--right .spike:nth-child(1){
+.spikes--right .spike:nth-child(1) {
   position: absolute;
   left: 0;
   top: 0;
 }
-.spikes--right .spike:nth-child(2){
+.spikes--right .spike:nth-child(2) {
   width: 35rem;
   position: absolute;
   top: 5rem;
 }
-.spikes--right .spike:nth-child(3){
+.spikes--right .spike:nth-child(3) {
   position: absolute;
   left: -5rem;
-  top: calc(15rem/1.6);
+  top: calc(15rem / 1.6);
 }
 
-.spikes--bottom-left{
+.spikes--bottom-left {
   top: 50rem;
   left: 1.7rem;
 }
 
-.home__square{
+.home__square {
   width: 40rem;
   position: absolute;
   top: 8rem;
   left: 25rem;
 }
 
-.home__dots{
+.home__dots {
   width: 40rem;
   position: absolute;
   top: 20rem;
@@ -243,19 +259,337 @@ img {
   top: 75vh;
 }
 
-.footer__arrow{
+.footer__arrow {
   width: 4rem;
   height: 4rem;
 }
 
-.footer__line{
+.footer__line {
   width: 20rem;
-  height: .5rem;
+  height: 0.5rem;
   border: none;
   background-color: var(--black);
 }
 
 /* End of home */
 
+/* About */
+.about {
+  height: 100vh;
+  position: relative;
+}
 
-/*  */
+.about__sidebar {
+  height: 100vh;
+  width: 55rem;
+  background-color: var(--black);
+  position: relative;
+}
+
+.about__dots {
+  width: 40rem;
+  position: absolute;
+  bottom: 20rem;
+}
+
+.about__text-field {
+  position: relative;
+  left: 40rem;
+  top: -85%;
+  background-color: #fff;
+  width: 60rem;
+  height: 70rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3.5rem;
+}
+
+.about__text-field--header {
+  text-align: left;
+  position: absolute;
+  width: 100rem;
+  top: -19%;
+  left: -15%;
+}
+
+.about__title {
+  font-size: 10rem;
+  position: absolute;
+  top: 7rem;
+  left: 15%;
+}
+
+.about__number {
+  position: absolute;
+}
+
+.about__text {
+  text-transform: none;
+  font-size: 2rem;
+}
+
+.about__square {
+  width: 50rem;
+  position: absolute;
+  bottom: -3rem;
+  right: -3rem;
+  z-index: -1;
+}
+
+.spikes__corner {
+  width: 75rem;
+  position: absolute;
+  top: 15%;
+  right: 0;
+  z-index: -1;
+}
+
+.img__container {
+  width: 50rem;
+  position: absolute;
+  top: 20%;
+  right: 12%;
+}
+
+.img__yuma {
+  width: 100%;
+  z-index: 1;
+  position: relative;
+}
+.rectangular-shadows {
+  width: 50rem;
+  position: absolute;
+}
+
+.rectangular-shadows:nth-child(1) {
+  bottom: -6.5rem;
+}
+.rectangular-shadows:nth-child(2) {
+  bottom: -8rem;
+}
+.rectangular-shadows:nth-child(3) {
+  bottom: -9.5rem;
+}
+/* End of about */
+
+/* Skills */
+.skills {
+  height: 100vh;
+  position: relative;
+}
+
+.skills__sidebar {
+  position: absolute;
+  background-color: var(--black);
+  top: 0;
+  right: 0;
+  width: 25rem;
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills__header {
+  width: 0;
+  position: relative;
+  top: 2rem;
+  left: 175rem;
+  z-index: 1;
+}
+
+.skills__title {
+  position: absolute;
+  top: 6rem;
+  right: 12rem;
+  z-index: 1;
+}
+
+.skills__number {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.skills__text-field {
+  position: absolute;
+  right: 8rem;
+  top: 16rem;
+  background-color: #fff;
+  width: 45rem;
+  height: 60rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3.5rem;
+}
+
+.skills__text {
+  text-transform: none;
+  font-size: 2rem;
+}
+
+.skills__load-bars {
+  height: 50rem;
+  display: flex;
+  align-items: left;
+  justify-content: space-evenly;
+  flex-direction: column;
+  position: relative;
+  top: 50%;
+  transform: translateY(-40%);
+}
+
+.load-bar {
+  display: flex;
+  align-items: center;
+}
+
+.load-bar__base {
+  position: relative;
+  left: -4rem;
+  background-color: var(--grey);
+  width: 120rem;
+  height: 5rem;
+  transform: skew(-50deg);
+}
+.load-bar__skill {
+  position: absolute;
+  top: -0.25rem;
+  background-color: var(--black);
+  width: 90%;
+  height: 5.5rem;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.skill__text {
+  transform: translateY(-50%) skew(50deg);
+  display: flex;
+  padding-left: 30rem;
+  width: 100%;
+  color: var(--white);
+  position: absolute;
+  top: 50%;
+}
+
+.skill-name {
+  font-size: 3rem;
+  opacity: 0.5;
+}
+
+.skill-percent {
+  font-family: 'Alex Brush', 'Helvetica';
+  position: absolute;
+  right: 4rem;
+}
+
+.skill__dots {
+  position: absolute;
+  right: 35rem;
+  bottom: 20rem;
+  width: 50rem;
+  z-index: -1;
+}
+
+.skills__spikes--bottom-left {
+  position: absolute;
+  width: 25rem;
+  transform: rotate(90deg);
+  left: 100rem;
+  bottom: 8rem;
+}
+
+.logo__on-fly {
+  position: absolute;
+  width: 5rem;
+  z-index: 100;
+  transition: all 1s;
+  
+}
+
+.fly__logo {
+  width: 100%;
+}
+
+.visual{
+  top: 5rem;
+  left: 15rem;
+  animation: bounce 2s infinite cubic-bezier(.6,.1,.59,.93) .1s;
+
+}
+
+.react{
+  top: 25rem;
+  left: 60rem;
+  animation: bounce 2s infinite cubic-bezier(.6,.1,.59,.93) .3s;
+
+}
+
+.google{
+  top: 22rem;
+  left: 100rem;
+  animation: bounce 2s infinite cubic-bezier(.6,.1,.59,.93) 1.9s;
+
+
+}
+
+.html{
+  top: 30rem;
+  left: 130rem;
+  animation: bounce 2s infinite cubic-bezier(.6,.1,.59,.93) .7s;
+
+}
+
+.css{
+  top: 60rem;
+  left: 140rem;
+  animation: bounce 2s infinite cubic-bezier(.6,.1,.59,.93) 1.2s;
+
+}
+.bootstrap{
+  bottom: 12rem;
+  left: 160rem;
+  animation: bounce 2s infinite cubic-bezier(.6,.1,.59,.93) .11s;
+
+}
+.node{
+  bottom: 5rem;
+  left: 120rem;
+  animation: bounce 2s infinite cubic-bezier(.6,.1,.59,.93) 1.33s;
+
+}
+.figma{
+  bottom: 13rem;
+  left: 90rem;
+  animation: bounce 2s infinite cubic-bezier(.6,.1,.59,.93) .9s;
+
+}
+.js{
+  bottom: 8rem;
+  left: 50rem;
+  animation: bounce 2s infinite cubic-bezier(.6,.1,.59,.93) 1.7s;
+
+}
+.git{
+  bottom: 16rem;
+  left: 10rem;
+  animation: bounce 2s infinite cubic-bezier(.6,.1,.59,.93) .5s;
+
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0%);
+  }
+
+  50% {
+    transform: translateY(20%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+/* End of Skills */
