@@ -39,9 +39,6 @@
             <img src="img/grey-spike.png" alt="rectangle" class="spike" />
             <img src="img/grey-spike.png" alt="rectangle" class="spike" />
           </div>
-          <img src="img/Dots.png" alt="nuée de points" />
-          <img src="img/Dots.png" alt="nuée de points" />
-          <img src="img/Dots.png" alt="nuée de points" />
         </div>
         <img src="img/square.png" alt="carré" class="home__square" />
         <img src="img/Dots.png" alt="nuée de points" class="home__dots" />
@@ -50,10 +47,16 @@
       <div class="home__navbar">
         <img src="img/logoyuma.png" alt="Logo yuma" class="navbar__logo" />
         <div class="navbar__items">
-          <p class="navbar__item"><a href="">à propos</a></p>
-          <p class="navbar__item"><a href="">compétences</a></p>
-          <p class="navbar__item"><a href="">projet</a></p>
-          <p class="navbar__item"><a href="">contact</a></p>
+          <p class="navbar__item about__link"><a href="#about">à propos</a></p>
+          <p class="navbar__item skills__link">
+            <a href="#skills">compétences</a>
+          </p>
+          <p class="navbar__item projects__link">
+            <a href="#projects">projets</a>
+          </p>
+          <p class="navbar__item contact__link">
+            <a href="#contact">contact</a>
+          </p>
         </div>
       </div>
       <!-- SIDEBAR -->
@@ -61,20 +64,35 @@
         <div class="sidebar__follow">
           <p class="follow__text">suivez-moi</p>
           <hr class="follow__line" />
-          <img
-            class="follow__link"
-            src="img/facebook.svg"
-            alt="logo facebook"
-          />
-          <img class="follow__link" src="img/lettre.svg" alt="logo lettre" />
-          <img class="follow__link" src="img/phone.svg" alt="logo phone" />
-          <img class="follow__link" src="img/github.svg" alt="logo github" />
+          <a href="" class="b">
+            <img
+              class="follow__link"
+              src="img/facebook.svg"
+              alt="logo facebook"
+            />
+          </a>
+          <a href="" class="b">
+            <img class="follow__link" src="img/lettre.svg" alt="logo lettre" />
+          </a>
+          <a href="" class="b">
+            <img class="follow__link" src="img/phone.svg" alt="logo phone" />
+          </a>
+          <a href="" class="b">
+            <img class="follow__link" src="img/github.svg" alt="logo github" />
+          </a>
         </div>
       </div>
       <!-- CENTERED LOGO -->
       <div class="home__container">
         <div class="box-center">
-          <img src="img/line.png" alt="ligne" class="box-center__logo--line" />
+          <div class="a">
+            <img
+              src="img/line.png"
+              alt="ligne"
+              class="box-center__logo--line"
+            />
+            <div class="line"></div>
+          </div>
           <img
             src="img/logo.png"
             alt="gros logo yuma"
@@ -86,19 +104,21 @@
       <!-- FOOTER ARROW -->
       <div class="home__footer">
         <hr class="footer__line" />
-        <img src="img/Arrow.png" alt="arrow" class="footer__arrow" />
         <hr class="footer__line" />
+        <a href="#about" class="footer__arrow">
+          <img src="img/Arrow.png" alt="arrow" />
+        </a>
       </div>
     </section>
     <!-- END OF HOME -->
     <!-- ABOUT -->
-    <section class="about">
+    <section class="about" id="about">
       <!-- SIDEBAR -->
       <div class="about__sidebar">
         <img src="img/Dots.png" alt="nuée de points" class="about__dots" />
       </div>
       <!-- TEXT ZONE -->
-      <div class="about__text-field">
+      <div class="text-field about__text-field">
         <div class="about__text-field--header">
           <div class="number about__number">01</div>
           <p class="title about__title">à propos</p>
@@ -142,7 +162,7 @@
     <!-- END OF ABOUT -->
 
     <!-- SKILLS -->
-    <section class="skills">
+    <section class="skills" id="skills">
       <!-- TITLE -->
       <div class="skills__header">
         <p class="title skills__title">compétences</p>
@@ -150,7 +170,7 @@
       </div>
       <!-- ASIDE -->
       <div class="skills__sidebar"></div>
-      <div class="skills__text-field">
+      <div class="text-field skills__text-field">
         <p class="skills__text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
           ducimus! Dolor illum accusantium consequuntur dignissimos sequi sed
@@ -232,36 +252,184 @@
         <img src="img/grey-spike.png" alt="rectangle" class="spike" />
       </div>
       <div class="logo__on-fly visual">
-        <img src="img/visualstudio.png" alt="" class="fly__logo"/>
+        <img src="img/visualstudio.png" alt="" class="fly__logo" />
       </div>
       <div class="logo__on-fly react">
-        <img src="img/react.svg" alt="" class="fly__logo"/>
+        <img src="img/react.svg" alt="" class="fly__logo" />
       </div>
       <div class="logo__on-fly google">
-        <img src="img/google.svg" alt="" class="fly__logo"/>
+        <img src="img/google.svg" alt="" class="fly__logo" />
       </div>
       <div class="logo__on-fly html">
-        <img src="img/html'.svg" alt="" class="fly__logo"/>
+        <img src="img/html'.svg" alt="" class="fly__logo" />
       </div>
       <div class="logo__on-fly css">
-        <img src="img/css.svg" alt="" class="fly__logo"/>
+        <img src="img/css.svg" alt="" class="fly__logo" />
       </div>
       <div class="logo__on-fly bootstrap">
-        <img src="img/bootstrap.svg" alt="" class="fly__logo"/>
+        <img src="img/bootstrap.svg" alt="" class="fly__logo" />
       </div>
       <div class="logo__on-fly node">
-        <img src="img/node.svg" alt="" class="fly__logo"/>
+        <img src="img/node.svg" alt="" class="fly__logo" />
       </div>
       <div class="logo__on-fly figma">
-        <img src="img/figma.svg" alt="" class="fly__logo"/>
+        <img src="img/figma.svg" alt="" class="fly__logo" />
       </div>
       <div class="logo__on-fly js">
-        <img src="img/js.svg" alt="" class="fly__logo"/>
+        <img src="img/js.svg" alt="" class="fly__logo" />
       </div>
       <div class="logo__on-fly git">
-        <img src="img/git.svg" alt="" class="fly__logo"/>
+        <img src="img/git.svg" alt="" class="fly__logo" />
       </div>
     </section>
     <!-- END OF SKILLS -->
+
+    <!-- PROJETCS -->
+    <section class="projects" id="projects">
+      <!-- TITLE -->
+      <div class="projects__header">
+        <div class="number projects__number">03</div>
+        <p class="title projects__title">projets</p>
+      </div>
+      <!-- ASIDE -->
+      <div class="projects__sidebar"></div>
+      <div class="text-field projects__text-field">
+        <p class="projects__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
+          ducimus! Dolor illum accusantium consequuntur dignissimos sequi sed
+          provident aut quam odio reprehenderit voluptas nam atque doloremque,
+          officiis ex fugit excepturi. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Fugit, ducimus! Dolor illum accusantium consequuntur
+          dignissimos sequi sed provident aut quam odio reprehenderit voluptas
+          provident aut quam odio reprehenderit voluptas nam atque doloremque,
+          officiis ex fugit excepturi. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Fugit, ducimus! Dolor illum accusantium consequuntur
+          dignissimos sequi sed provident aut quam odio reprehenderit voluptas
+          nam atque doloremque, officiis ex fugit excepturi.
+        </p>
+      </div>
+      <!-- PROJECTS GALLERY -->
+      <div class="projects__gallery">
+        <a href="#" class="gallery-link">
+          <!-- <img src="img/logo_proarbre.png" alt="logo proarbre" class="project-logo"> -->
+          <img src="img/proarbre.png" class="project-img proarbre-color" />
+          <h3 class="project-name">proarbre</h3>
+          <p class="project-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+            commodi possimus iure hic excepturi. Corporis!
+          </p>
+        </a>
+        <a href="#" class="gallery-link">
+          <!-- <img src="img/logo_mulsanne.png" alt="logo mulsanne musculation" class="project-logo"> -->
+          <img src="img/mulmuscu.png" class="project-img mulsanne-color" />
+          <h3 class="project-name">m. musculation</h3>
+          <p class="project-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+            commodi possimus iure hic excepturi. Corporis!
+          </p>
+        </a>
+        <a href="#" class="gallery-link">
+          <!-- <img src="img/logo_fdt.png" alt="logo Feuilledetemps.ca" class="project-logo"> -->
+          <img src="img/feuilledetemps.png" class="project-img fdt-color" />
+          <h3 class="project-name">Feuilledetemps.ca</h3>
+          <p class="project-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+            commodi possimus iure hic excepturi. Corporis!
+          </p>
+        </a>
+      </div>
+      <!-- DESIGN ELEMENTS -->
+      <img src="img/dots2.png" alt="nuée de points" class="projects__dots" />
+      <div class="spikes__container projects__spikes--bottom-right">
+        <img src="img/blue-spike.png" alt="rectangle" class="spike" />
+        <img src="img/grey-spike.png" alt="rectangle" class="spike" />
+        <img src="img/grey-spike.png" alt="rectangle" class="spike" />
+      </div>
+      <img src="img/angle.png" alt="angle design" class="projects__angle" />
+    </section>
+    <!-- END OF PROJETCS -->
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="contact__container">
+        <!-- TITLE -->
+        <div class="contact__header">
+          <div class="number contact__number">04</div>
+          <p class="title contact__title">contact</p>
+        </div>
+
+        <!-- CONTACT FORM -->
+        <form action="" class="contact__form">
+          <div class="form__item">
+            <input type="text" id="firstName" class="form__input" />
+            <label for="firstName" class="form__label">prénom</label>
+          </div>
+          <div class="form__item">
+            <input type="text" id="lastName" class="form__input" />
+            <label for="lastName" class="form__label">nom</label>
+          </div>
+          <div class="form__item">
+            <input type="text" id="mail" class="form__input" />
+            <label for="mail" class="form__label">email</label>
+          </div>
+          <div class="form__item form__item--textarea">
+            <label for="message" class="form__label--textarea">message</label>
+            <textarea
+              name="message"
+              id="message"
+              class="form__textarea"
+            ></textarea>
+          </div>
+        </form>
+      </div>
+
+      <!-- ASIDE -->
+      <div class="contact__sidebar">
+        <div class="contact__sidebar--follow">
+          <p class="follow__text">suivez-moi</p>
+          <hr class="follow__line contact__follow--line" />
+          <a href="" class="sidebar__link">
+            <img
+              class="contact__link follow__link"
+              src="img/facebook.svg"
+              alt="logo facebook"
+            />
+          </a>
+          <p>yumaollivier</p>
+          <a href="" class="sidebar__link">
+            <img
+              class="contact__link follow__link"
+              src="img/lettre.svg"
+              alt="logo lettre"
+            />
+          </a>
+          <p>contact@yumaollivier.com</p>
+          <img
+            class="contact__link follow__link"
+            src="img/phone.svg"
+            alt="logo phone"
+          />
+          <p>06 14 10 53 63</p>
+          <a href="" class="sidebar__link">
+            <img
+              class="contact__link follow__link"
+              src="img/github.svg"
+              alt="logo github"
+            />
+          </a>
+          <p>yumaollivier</p>
+        </div>
+      </div>
+
+      <!-- DESIGN ELEMENTS -->
+      <img src="img/dots3.png" alt="nuée de points" class="contact__dots" />
+      <div class="spikes__container contact__spikes--bottom-right">
+        <img src="img/blue-spike.png" alt="rectangle" class="spike" />
+        <img src="img/grey-spike.png" alt="rectangle" class="spike" />
+        <img src="img/grey-spike.png" alt="rectangle" class="spike" />
+      </div>
+    </section>
+    <!-- END OF CONTACT -->
   </body>
+  <script src="/script.js"></script>
 </html>
