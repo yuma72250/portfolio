@@ -45,6 +45,11 @@
       </div>
       <!-- NAVBAR -->
       <div class="home__navbar">
+        <img
+          src="img/grey-spike.png"
+          alt=""
+          class="navbar__scroll-background"
+        />
         <img src="img/logoyuma.png" alt="Logo yuma" class="navbar__logo" />
         <div class="navbar__items">
           <p class="navbar__item about__link"><a href="#about">à propos</a></p>
@@ -54,7 +59,7 @@
           <p class="navbar__item projects__link">
             <a href="#projects">projets</a>
           </p>
-          <p class="navbar__item contact__link">
+          <p class="navbar__item navbar__contact__link">
             <a href="#contact">contact</a>
           </p>
         </div>
@@ -64,20 +69,20 @@
         <div class="sidebar__follow">
           <p class="follow__text">suivez-moi</p>
           <hr class="follow__line" />
-          <a href="" class="b">
+          <a href="" target="_blank">
             <img
               class="follow__link"
               src="img/facebook.svg"
               alt="logo facebook"
             />
           </a>
-          <a href="" class="b">
+          <a href="" target="_blank">
             <img class="follow__link" src="img/lettre.svg" alt="logo lettre" />
           </a>
-          <a href="" class="b">
+          <a href="" target="_blank">
             <img class="follow__link" src="img/phone.svg" alt="logo phone" />
           </a>
-          <a href="" class="b">
+          <a href="https://github.com/yuma72250" target="_blank">
             <img class="follow__link" src="img/github.svg" alt="logo github" />
           </a>
         </div>
@@ -124,21 +129,13 @@
           <p class="title about__title">à propos</p>
         </div>
         <p class="about__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
-          ducimus! Dolor illum accusantium consequuntur dignissimos sequi sed
-          provident aut quam odio reprehenderit voluptas nam atque doloremque,
-          officiis ex fugit excepturi. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Fugit, ducimus! Dolor illum accusantium consequuntur
-          dignissimos sequi sed provident aut quam odio reprehenderit voluptas
-          nam atque doloremque, officiis ex fugit excepturi. Lorem ipsum dolor
-          sit amet consectetur adipisicing elit. Fugit, ducimus! Dolor illum
-          accusantium consequuntur dignissimos sequi sed provident aut quam odio
-          reprehenderit voluptas nam atque doloremque, officiis ex fugit
-          excepturi.t voluptas nam atque doloremque, officiis ex fugit
-          excepturi.
+          Bonjour, je m'appelle Yuma, je suis développeur et intégrateur web.<br>
+          J'avoue ne pas avoir été passionné par le web depuis ma tendre enfance mais c'est à la suite de la lecture d'un livre que j'ai découvert cet univers extraordinnaire.<br>
+          Voilà plus de 2 ans que je me donne tout les moyens possibles pour apprendre tout ce que peux sur le sujet et me permettre de répondre aux besoins des entreprises, petites ou grandes, associations ou freelances.<br>
+
         </p>
-        <img src="img/square.png" alt="carré bleu" class="about__square" />
       </div>
+      <img src="img/square.png" alt="carré bleu" class="about__square" />
       <!-- IMAGE AQUARELLE -->
       <div class="img__container">
         <img
@@ -184,63 +181,39 @@
       <!-- LOAD BARS -->
       <div class="skills__load-bars">
         <div class="load-bar">
-          <div class="load-bar__base">
-            <div class="load-bar__skill">
-              <div class="skill__text">
-                <p class="skill-name">html</p>
-                <p class="skill-percent">90%</p>
-              </div>
-            </div>
+          <p class="skill-name">html</p>
+          <div class="load-bar__skill">
+              <p class="skill-percent">0%</p>
           </div>
         </div>
         <div class="load-bar">
-          <div class="load-bar__base">
-            <div class="load-bar__skill">
-              <div class="skill__text">
-                <p class="skill-name">css</p>
-                <p class="skill-percent">90%</p>
-              </div>
-            </div>
+          <p class="skill-name">css</p>
+          <div class="load-bar__skill">
+              <p class="skill-percent">0%</p>
           </div>
         </div>
         <div class="load-bar">
-          <div class="load-bar__base">
-            <div class="load-bar__skill">
-              <div class="skill__text">
-                <p class="skill-name">javascript</p>
-                <p class="skill-percent">90%</p>
-              </div>
-            </div>
+          <p class="skill-name">javascript</p>
+          <div class="load-bar__skill">
+              <p class="skill-percent">0%</p>
           </div>
         </div>
         <div class="load-bar">
-          <div class="load-bar__base">
-            <div class="load-bar__skill">
-              <div class="skill__text">
-                <p class="skill-name">node js</p>
-                <p class="skill-percent">90%</p>
-              </div>
-            </div>
+          <p class="skill-name">node js</p>
+          <div class="load-bar__skill">
+              <p class="skill-percent">0%</p>
           </div>
         </div>
         <div class="load-bar">
-          <div class="load-bar__base">
-            <div class="load-bar__skill">
-              <div class="skill__text">
-                <p class="skill-name">react js</p>
-                <p class="skill-percent">90%</p>
-              </div>
-            </div>
+          <p class="skill-name">react js</p>
+          <div class="load-bar__skill">
+            <p class="skill-percent">0%</p>
           </div>
         </div>
         <div class="load-bar">
-          <div class="load-bar__base">
-            <div class="load-bar__skill">
-              <div class="skill__text">
-                <p class="skill-name">figma</p>
-                <p class="skill-percent">90%</p>
-              </div>
-            </div>
+          <p class="skill-name">figma</p>
+          <div class="load-bar__skill">
+              <p class="skill-percent">0%</p>
           </div>
         </div>
       </div>
@@ -358,18 +331,23 @@
           <p class="title contact__title">contact</p>
         </div>
 
+        <div class="message">
+          <p class="valid">Message envoyé</p>
+          <p class="invalid">Message non envoyé</p>
+        </div>
+
         <!-- CONTACT FORM -->
         <form action="" class="contact__form">
           <div class="form__item">
-            <input type="text" id="firstName" class="form__input" />
+            <input type="text" name="firstName" id="firstName" class="form__input" />
             <label for="firstName" class="form__label">prénom</label>
           </div>
           <div class="form__item">
-            <input type="text" id="lastName" class="form__input" />
+            <input type="text" name="lastName" id="lastName" class="form__input" />
             <label for="lastName" class="form__label">nom</label>
           </div>
           <div class="form__item">
-            <input type="text" id="mail" class="form__input" />
+            <input type="text" name="email" id="email" class="form__input" />
             <label for="mail" class="form__label">email</label>
           </div>
           <div class="form__item form__item--textarea">
@@ -380,6 +358,11 @@
               class="form__textarea"
             ></textarea>
           </div>
+          <div class="form__item--btn">
+            <div class="form__item">
+              <button type="submit" class="btn">Valider</button>
+            </div>
+          </div>
         </form>
       </div>
 
@@ -388,15 +371,15 @@
         <div class="contact__sidebar--follow">
           <p class="follow__text">suivez-moi</p>
           <hr class="follow__line contact__follow--line" />
-          <a href="" class="sidebar__link">
+          <a href="https://www.linkedin.com/in/yuma-ollivier-059a111b1/" target="_blank" class="sidebar__link">
             <img
               class="contact__link follow__link"
-              src="img/facebook.svg"
+              src="img/linkedin.svg"
               alt="logo facebook"
             />
           </a>
-          <p>yumaollivier</p>
-          <a href="" class="sidebar__link">
+          <p>Yuma Ollivier</p>
+          <a href="mailto:contact@yumaollivier.com" target="_blank" class="sidebar__link">
             <img
               class="contact__link follow__link"
               src="img/lettre.svg"
@@ -404,13 +387,15 @@
             />
           </a>
           <p>contact@yumaollivier.com</p>
-          <img
-            class="contact__link follow__link"
-            src="img/phone.svg"
-            alt="logo phone"
-          />
+          <a href="tel:+33614105363" target="_blank" class="sidebar__link">
+            <img
+              class="contact__link follow__link"
+              src="img/phone.svg"
+              alt="logo phone"
+            />
+          </a>
           <p>06 14 10 53 63</p>
-          <a href="" class="sidebar__link">
+          <a href="https://github.com/yuma72250" target="_blank" class="sidebar__link">
             <img
               class="contact__link follow__link"
               src="img/github.svg"
@@ -423,6 +408,7 @@
 
       <!-- DESIGN ELEMENTS -->
       <img src="img/dots3.png" alt="nuée de points" class="contact__dots" />
+      <img src="img/square.png" alt="carré" class="contact__square">
       <div class="spikes__container contact__spikes--bottom-right">
         <img src="img/blue-spike.png" alt="rectangle" class="spike" />
         <img src="img/grey-spike.png" alt="rectangle" class="spike" />
@@ -432,4 +418,5 @@
     <!-- END OF CONTACT -->
   </body>
   <script src="/script.js"></script>
+  <script src="/getForm.js"></script>
 </html>
